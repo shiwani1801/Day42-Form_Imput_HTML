@@ -25,8 +25,9 @@ document.getElementById("tel").addEventListener("change",event=>{
     else
         textErrorTel.textContent = ""
 })
+
 document.getElementById("pwd").addEventListener("change",event=>{
-    let telRegex = RegExp('[^ ]{8,}')
+    let telRegex = RegExp('^(?=[A-Za-z0-9@#$%^&+!=]+$)^(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+!=])(?=.{8,}).*$')
     if (!telRegex.test(event.target.value))
         textErrorPwd.textContent = "Password is incorrect"
     else
