@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./simple_form.css">
+  <script defer src="./simple_form.js"></script>
+  <title>Basic Input types</title>
+</head>
+
+<body>
+  <form class="form" onsubmit="save(event);return false">
+      <header class="headerContainer">
+        HTML 5 Form Input Elements
+      </header>
+      <div>
+        <label  for="name">text Input type for Name: </label>
+        <input  type="text" id="text" name="text" />
+        <error-output class="text-error text-error-name"></error-output>
+      </div>
+    </form>
+    <body>
